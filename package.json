@@ -1,0 +1,21 @@
+{
+  "name": "mech-aki",
+  "version": "0.1.0",
+  "description": "Módulo para jugar akinator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "akinator",
+    "aki",
+    "discord-akinator",
+    "discordjs-akinator"
+  ],
+  "author": "MechSlayer",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
+  }
+}
