@@ -1,6 +1,6 @@
 {
   "name": "mech-aki",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Módulo para jugar akinator",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,13 @@
     "discordjs-akinator"
   ],
   "author": "MechSlayer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MechSlayer/mech-aki.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MechSlayer/mech-aki.git/issues"
+  },
   "license": "ISC",
   "dependencies": {
     "request": "^2.88.2",
