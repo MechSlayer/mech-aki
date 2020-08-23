@@ -72,6 +72,7 @@ module.exports = class Client
         }});
         
         let body = response.body;
+        if (body.completion == "WARN - NO QUESTION") return null;
         if (body.completion != "OK") throw new Error("Ha ocurrido un error al pasar de pregunta " + JSON.stringify(body));
         let params = body.parameters;
 
@@ -126,6 +127,7 @@ module.exports = class Client
 
         
         let body = response.body;
+        if (body.completion == "WARN - NO QUESTION") return null;
         if (body.completion != "OK") throw new Error("Ha ocurrido un error al pasar de pregunta " + JSON.stringify(body));
         let params = body.parameters;
 

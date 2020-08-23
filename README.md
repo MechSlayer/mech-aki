@@ -11,6 +11,7 @@
     while (akinator.progreso < 85) { //Mientras el progreso sea inferior al 85% seguir respondiendo
         console.log(respuesta.pregunta); //La pregunta que nos está haciendo
         respuesta = await akinator.siguiente(0) // 0: Sí, 1: No, 2: No lo se, 3: Probablemente, 4: Probablemente no
+        if (!respuesta) break; //No hay más preguntas disponibles
     }
 
     let resultados = await akinator.respuestas(); //Obtener los personajes que ha adivinado
